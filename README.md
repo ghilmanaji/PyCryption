@@ -1,6 +1,6 @@
 # Simple PyCryption
 ## 1. What is it?
-### Simple PyCryption is an app to encrypt file and powered with library like OS, Path, and Fernet
+#### Simple PyCryption is an app to encrypt file and powered with library like OS, Path, and Fernet
 ## 2. How To Encrypt
 #### 2.1 insert your all file and folders on [Input Encrypt](https://geth.ethereum.org/docs/interacting-with-geth/javascript-console)
 #### 2.2 run PyCryption
