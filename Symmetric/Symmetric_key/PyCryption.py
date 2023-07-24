@@ -1,13 +1,22 @@
+# import library
 import os
 from pathlib import Path
 from cryptography.fernet import Fernet
+
+# import key to do encryption
 with open('filekey.key', 'rb') as filekey:
     key = filekey.read()
 fernet = Fernet(key)
 
+# path input and output
 basepath1 ="Input_Encrypt"
 basepath2 ="Output_Encrypt"
+os.mkdir(basepath2)
+
+# define list folder
 list_folder=[]
+
+# loop to encrypted file in basepath
 for entry in os.listdir(basepath1):
     if os.path.isfile(os.path.join(basepath1,entry)):
                 with open(basepath1+"/"+entry, 'rb') as file:
@@ -15,10 +24,12 @@ for entry in os.listdir(basepath1):
                 encrypted = fernet.encrypt(original)
                 with open(basepath2+"/"+entry+'.aji', 'wb') as encrypted_file:
                     encrypted_file.write(encrypted)
+# loop to read all folder on basepath
 for entry in os.listdir(basepath1):
         if os.path.isdir(os.path.join(basepath1, entry)):
             enum_folder=0
             list_folder.insert(enum_folder,entry)
+# loop to encrypt file on each folder on basepath
 for folder in list_folder:
     path1="Input_Encrypt/"+folder
     path2="Output_Encrypt/"+folder
