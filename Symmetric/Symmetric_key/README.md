@@ -1,5 +1,4 @@
 # Symmetric Encryption With Key
-Symmetric encryption key is a type of encryption where only one key is used to both encrypt and decrypt digital data
 ## How To Use
 ### 1 Generate a Key
 #### Run [Generate_Key.py](https://github.com/ghilmanaji/Simple-PyCryption/blob/main/Generate_Key.py) to generate a key to encrypt and decrypt the file
