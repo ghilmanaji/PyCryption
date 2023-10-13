@@ -13,3 +13,5 @@
 
 # Disclaimer
 This app only capable to 3 tier directory from basepath
+# Note
+Don't lose the key you have generated, because this will cause the encrypted file can't decrypted without it
